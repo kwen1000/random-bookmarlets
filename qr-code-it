@@ -1,1 +1,4 @@
+/*
+Generates your current page (or supplied URL) as a QR code.
+*/
 javascript:(function(){var text = prompt("Input!"); if (text.length < 2){text = window.location.href}; window.location.href = "http://www.qr-code-generator.com/phpqrcode/getCode.php?cht=qr&chl="+encodeURIComponent(text)})();
